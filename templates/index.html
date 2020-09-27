@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+  </head>
+  <body>
+    <h1>Crawler Panel</h1>
+    <form action="{% url 'result' %}">
+      {% csrf_token %}
+
+      <p>Url:</p>
+      <input type="text" name="url" placeholder="url">
+      <br>
+
+      <p>Number of Pages:</p>
+      <input type="text" name="numofpages" placeholder="number of pages">
+      <br>
+
+      <p>Day:</p>
+      <input type="text" name="day" placeholder="day">
+      <br>
+
+      <p>Month:</p>
+      <input type="text" name="month" placeholder="month">
+      <br>
+
+      <p>Year:</p>
+      <input type="text" name="year" placeholder="year">
+      <br>
+
+      <input type="submit" value="getCrawler">
+    </form>
+  </body>
+</html>
